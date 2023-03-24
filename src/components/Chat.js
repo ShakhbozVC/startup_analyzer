@@ -54,7 +54,7 @@ const Chat = ({ selectedContact }) => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
+            Authorization: `Bearer ${process.env.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}`,
           },
           body: JSON.stringify({
             model: "gpt-3.5-turbo",
