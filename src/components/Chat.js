@@ -54,12 +54,12 @@ const Chat = ({ selectedContact }) => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${process.env.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}`,
+            Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
           },
           body: JSON.stringify({
-            model: "gpt-3.5-turbo",
+            model: "davinci",
             messages,
-            max_tokens: 2048,
+            max_tokens: 512,
             temperature: 0.5,
           }),
         }
