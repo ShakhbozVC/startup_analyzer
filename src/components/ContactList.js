@@ -14,7 +14,7 @@ const ContactList = ({ contacts, onContactSelect }) => {
   return (
     <div className="flex-column contact-list">
       <div className="contact-list-header">
-        <span>My Venutres</span>
+        <span>My Ventures</span>
       </div>
       {contacts.map((contact) => (
         <div

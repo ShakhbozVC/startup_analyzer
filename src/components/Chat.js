@@ -48,6 +48,7 @@ const Chat = ({ selectedContact }) => {
       setIsLoading(true);
 
       // Make API request to ChatGPT
+      
       const response = await fetch(
         "https://api.openai.com/v1/chat/completions",
         {
@@ -57,9 +58,9 @@ const Chat = ({ selectedContact }) => {
             Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
           },
           body: JSON.stringify({
-            model: "davinci",
+            model: "text-davinci-003",
             messages,
-            max_tokens: 512,
+            max_tokens: 2048,
             temperature: 0.5,
           }),
         }
