@@ -58,7 +58,7 @@ const Chat = ({ selectedContact }) => {
             Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
           },
           body: JSON.stringify({
-            model: "text-davinci-003",
+            model: "gpt-3.5-turbo",
             messages,
             max_tokens: 2048,
             temperature: 0.5,
