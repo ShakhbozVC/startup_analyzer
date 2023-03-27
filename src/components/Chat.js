@@ -61,7 +61,7 @@ const Chat = ({ selectedContact }) => {
             model: "gpt-3.5-turbo",
             messages,
             max_tokens: 2048,
-            temperature: 0.5,
+            temperature: 0.7,
           }),
         }
       );
